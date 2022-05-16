@@ -38,8 +38,8 @@ jobs:
           context: ./
           # Note: tags has to be all lower-case
           tags: |
-            ghcr.io/stacktonic/nginx:latest
-            ghcr.io/stacktonic/nginx:ubutu
+            ghcr.io/stacktonic/nginx-php:latest
+            ghcr.io/stacktonic/nginx-php:ubutu
           # build on feature branches, push only on main branch
           push: ${{ github.ref == 'refs/heads/main' }}
 
