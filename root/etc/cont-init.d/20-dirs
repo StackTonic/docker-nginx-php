@@ -2,4 +2,5 @@
 
 # make folders
 mkdir -p \
-    /config/php
+    /config/php \
+    /run/php
