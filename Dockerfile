@@ -22,6 +22,9 @@ RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/co
     php${PHP_VERSION}-opcache \
     php${PHP_VERSION}-openssl \
     php${PHP_VERSION}-pdo \
+    php${PHP_VERSION}-pdo_mysql \
+    php${PHP_VERSION}-pdo_sqlite \
+    php${PHP_VERSION}-pdo_pgsql \
     php${PHP_VERSION}-pear \
     php${PHP_VERSION}-pecl-apcu \
     php${PHP_VERSION}-pecl-redis \
@@ -29,7 +32,6 @@ RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/co
     php${PHP_VERSION}-soap \
     php${PHP_VERSION}-sodium \
     php${PHP_VERSION}-xmlreader \
-
     php${PHP_VERSION}-bcmath \
     php${PHP_VERSION}-bz2 \
     php${PHP_VERSION}-ctype \
