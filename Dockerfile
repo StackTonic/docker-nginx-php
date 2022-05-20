@@ -1,4 +1,4 @@
-FROM ghcr.io/stacktonic/nginx:v0.0.2
+FROM ghcr.io/stacktonic/nginx:v0.0.3
 
 ARG PHP_VERSION=8
 ENV PHP_VERSION $PHP_VERSION
