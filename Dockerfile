@@ -64,7 +64,7 @@ RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/co
     php${PHP_VERSION}-xsl \
     php${PHP_VERSION}-zip \
     php${PHP_VERSION}-zlib \
-    php${PHP_VERSION}-pecl-oauth \
+    #php${PHP_VERSION}-pecl-oauth \   doesn't exist in Alpine 3.17
     php${PHP_VERSION}-simplexml \
     php${PHP_VERSION}-pecl-igbinary \
     # Untrusted?
