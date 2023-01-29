@@ -33,7 +33,6 @@ RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/co
     php${PHP_VERSION}-pear \
     php${PHP_VERSION}-pecl-apcu \
     php${PHP_VERSION}-pecl-redis \
-    php${PHP_VERSION}-pecl-oauth \
     php${PHP_VERSION}-pgsql \
     php${PHP_VERSION}-posix \
     php${PHP_VERSION}-soap \
