@@ -10,7 +10,7 @@ pipeline {
         string(name: 'IMAGE_NAME', defaultValue: 'stacktonic/nginx-php', description: 'How should I store the image?')
         string(name: 'IMAGE_TAG', defaultValue: 'latest', description: 'Do we have a speical tag?')
 
-        string(name: 'PHP_VERSION', defaultValue: '8', description: 'What PHP version should we run?')
+        string(name: 'PHP_VERSION', defaultValue: '81', description: 'What PHP version should we run?')
     }
 
     agent {
