@@ -41,6 +41,7 @@ spec:
         REPOSITORY_URL= 'https://github.com/StackTonic/docker-nginx-php.git'
         BRANCH_NAME= 'main'
         DOCKER_REGISTRY_URL="${params.DOCKER_REGISTRY_URL}"
+        PHP_VERSION="${params.PHP_VERSION}"
     }
     stages {
         stage('Get Code') {
@@ -63,7 +64,7 @@ spec:
                 container('docker') {
                     sh 'printenv'
                     sh 'docker info'
-                    sh "docker build --network host -t ${IMAGE_NAME}:build-${BUILD_ID} --build-arg BASE_REPOSITORY_URL=${BASE_REPOSITORY_URL} --build-arg BASE_IMAGE_NAME=${BASE_IMAGE_NAME} --build-arg BASE_IMAGE_TAG=${BASE_IMAGE_TAG}  ."
+                    sh "docker build --network host -t ${IMAGE_NAME}:build-${BUILD_ID} --build-arg BASE_REPOSITORY_URL=${BASE_REPOSITORY_URL} --build-arg BASE_IMAGE_NAME=${BASE_IMAGE_NAME} --build-arg BASE_IMAGE_TAG=${BASE_IMAGE_TAG} --build-arg PHP_VERSION=${PHP_VERSION}  ."
                 }
             }
         }
